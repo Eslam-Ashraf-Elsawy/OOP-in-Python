@@ -9,6 +9,11 @@ class Member:
 
         print(f"We have {cls.users_num} users in our system")
 
+    @staticmethod
+    def say_hello():
+
+        print("Hello from static method")
+
     def __init__(self,first_name,middle_name,last_name,gender):
 
         self.fname=first_name
@@ -81,9 +86,12 @@ print("#"* 50)
 
 print(member_one.get_full_name())
 print(Member.get_full_name(member_one))
+
 print("#"* 50)
 
+Member.say_hello()
 
+print("#" * 50)
 
 
 
